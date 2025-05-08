@@ -40,7 +40,7 @@ The extraction tool can extract the following file types from the game, which yo
 
 ## Download
 
-Only the code used by the extractor is available on GitHub. To download the tool itself, you must join the [Discord server](https://discord.gg/Z88NnTgpWU) and navigate to the **#🛠game-unpacker-tool** channel to download the `.exe` application that you can run.
+Only the code used by the extractor is available on GitHub. To download the tool itself, you must join the **[Discord server](https://discord.gg/Z88NnTgpWU)** and navigate to the **#🛠game-unpacker-tool** channel to download the `.exe` application that you can run.
 
 [<img src="https://github.com/user-attachments/assets/f61046f5-1dc5-4b0c-87f8-4a94d6cbac96">](https://discord.gg/Z88NnTgpWU)
 

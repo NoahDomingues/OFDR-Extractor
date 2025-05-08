@@ -1,0 +1,136 @@
+@echo off
+title OFDR Game Extractor
+color A
+echo(
+echo ==== Operation Flashpoint: Dragon Rising Game Extractor - v1.0 ====
+echo ======================== By Noah Domingues ========================
+echo(
+echo ------------------- Based on QuickBMS by Aluigi -------------------
+echo(
+echo -------- OFP Discord Server: https://discord.gg/Z88NnTgpWU --------
+echo(
+
+echo Would you like to extract Operation Flashpoint: Dragon Rising's game files? 
+echo (Press ENTER to continue or 'n' to quit)
+set /p user_input=
+
+if "%user_input%"=="" goto continue
+if /i "%user_input%"=="y" goto continue
+if /i "%user_input%"=="yes" goto continue
+if /i "%user_input%"=="n" goto quit
+if /i "%user_input%"=="no" goto quit
+
+echo Invalid input, exiting...
+goto quit
+
+:quit
+echo Exiting OFDR Game Extractor...
+exit
+
+:continue
+echo Preparing to extract...
+
+echo(
+
+:: Check for game executable
+if not exist "OFDR.exe" (
+    echo ERROR: Please put OFDR Extractor inside your game installation directory and try again!
+    pause >nul
+    exit /b
+) else (
+    echo Game located, proceeding...
+)
+
+:: Check for win_000.nfs
+if not exist "win_000.nfs" (
+    echo ERROR: win_000.nfs file not found! Please put OFDR Extractor and the files that come with it inside your game installation directory and try again!
+    pause >nul
+    exit /b
+) else (
+    echo NFS file located, proceeding...
+)
+
+:: Check for win_000.full
+if not exist "win_000.full" (
+    echo WARNING: win_000.full archive does not exist, creating it now...
+    ExtractionAgent compile.bms win_000.nfs "."
+    echo win_000.full archive compiled successfully, proceeding...
+    )
+) else (
+    echo win_000 archive located, proceeding...
+)
+
+:: Make extraction directory if it doesn't already exist, or if it exists, quit
+if exist "_extract\" (
+    echo ERROR: Extraction directory already exists! Please rename, delete or move the _extract folder to avoid overwriting existing files, and then try again!
+    pause >nul
+    exit /b
+) else (
+    echo Creating extraction directory now...
+    mkdir _extract
+    echo Extraction directory created successfully, proceeding...
+)
+
+:: Unpack game files
+echo(
+echo Beginning stage 1 extraction, this may take a while...
+ExtractionAgent -K extract.bms win_000.nfs "_extract"
+echo(
+echo Extraction stage 1 complete, proceeding to stage 2...
+echo(
+
+:: Unpack game terrain file (>1GB)
+echo(
+echo Beginning stage 2 extraction, this may take a while...
+echo(
+ExtractionAgent -k extractterrain.bms win_000.nfs "_extract\terrain"
+echo(
+echo Extraction stage 2 complete.
+
+echo(
+
+title OFDR Game Extractor - Extraction Successful!
+echo ===================== GAME EXTRACTED SUCCESSFULLY =====================
+
+echo(
+
+:: Ask user if they would like to create template directories in data_win for modded game files
+setlocal
+
+echo Would you like to make directories in your data_win folder to help you add modded files to the game? (y/n)
+set /p user_input=
+
+if /i "%user_input%"=="y" goto make_dirs
+if /i "%user_input%"=="yes" goto make_dirs
+if /i "%user_input%"=="n" goto continue
+if /i "%user_input%"=="no" goto continue
+
+echo Invalid input, proceeding without making directories...
+goto continue
+
+:make_dirs
+echo(
+echo Creating directories... (some errors might occur, you can safely ignore these)
+DirectoryMakerAgent.exe
+echo(
+echo Directories created successfully!
+title OFDR Game Extractor - Extraction Successful!
+
+:continue
+echo(
+
+echo WARNING: The files have been extracted to the "_extract" directory in your game installation folder. In this folder, you may come accross files with "_00000001" in the filename. THESE FILES ARE CORRUPTED. However, this is not an issue; these files are not part of the game and can safely be deleted. So far, I have found only one file that extracts corrupted, terrain.xml in the terrain folder. 
+
+echo(
+
+echo Thank you for using my game file extractor for OFDR, I hope it works and I look forward to seeing what you make with the extracted files!
+
+echo(
+
+echo Don't forget to join the Operation Flashpoint Discord server! https://discord.gg/Z88NnTgpWU
+
+echo(
+
+endlocal
+
+pause

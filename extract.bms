@@ -1,0 +1,320 @@
+# Operation Flashpoint: Dragon Rising - Extraction Script v1.0
+# note: you MUST run compile.bms first!
+# note: this script is an unofficial workaround... but it appears to work without crashing
+# note: the folders are not handled correctly so there will be no sub-sub folders
+# note: I am working on an updated version that handles subfolders, however this is still in development
+# script built for ExtractionAgent, based on QuickBMS
+# QuickBMS http://aluigi.org/papers.htm#quickbms
+# -------------------------------------------------------------------------------
+# BY NOAH DOMINGUES - Operation Flashpoint Discord: https://discord.gg/Z88NnTgpWU
+# -------------------------------------------------------------------------------
+
+comtype lzss
+
+get SIZE asize
+encryption aes "\xAC\x22\x11\x23\x44\x95\xAC\xA2\x7E\x80\x59\x86\x10\x8B\xEE\xDD\x4D\x01\xD3\x97\x0B\x9D\x4C\xA9\x3D\x7B\xE1\xBB\xED\xDA\x84\x58"
+log MEMORY_FILE 0 SIZE
+encryption "" ""
+
+findloc NAMEOFF string "system" MEMORY_FILE # lame solution
+goto NAMEOFF MEMORY_FILE
+for i = 0
+    get NAME string MEMORY_FILE
+    if NAME == ""
+        break
+    endif
+    putarray 0 i NAME
+next i
+
+open FDSE "win_000.full"
+
+set FOLDER string ""
+set PREV_OFFSET long 0
+set DATAOFF long 0x7e
+set OFFSET_SEEK 0x2c0000
+
+for i = 0
+    goto DATAOFF MEMORY_FILE
+    get NAMENUM long MEMORY_FILE
+    get DUMMY3 long MEMORY_FILE
+    get SIZE long MEMORY_FILE
+    get FILENUM long MEMORY_FILE
+    get DUMMY4 long MEMORY_FILE
+    get TYPE long MEMORY_FILE
+    get OFFSET long MEMORY_FILE
+    get DUMMY1 long MEMORY_FILE
+    savepos DATAOFF MEMORY_FILE
+
+    if OFFSET == 0
+    if SIZE == 0
+    if FILENUM == 0
+        cleanexit
+    endif
+    endif
+    endif
+
+    if i == 0
+        set OFFSET_SEEK long OFFSET
+    endif
+
+    math OFFSET -= OFFSET_SEEK
+    math ZSIZE = OFFSET
+    math ZSIZE -= PREV_OFFSET
+
+    math NAMENUM >>= 4
+    if i == 0   # work-around
+        set NAMENUM long 0
+    endif
+    getarray NAME 0 NAMENUM
+
+    ; Check if the file is "hi_lod.tpk" or any of the speech_xx.xml files and skip them
+    if NAME == "hi_lod.tpk"
+        continue
+    endif
+    if NAME == "speech_en.xml"
+        continue
+    endif
+    if NAME == "speech_de.xml"
+        continue
+    endif
+    if NAME == "speech_fr.xml"
+        continue
+    endif
+    if NAME == "speech_es.xml"
+        continue
+    endif
+    if NAME == "speech_it.xml"
+        continue
+    endif
+    if NAME == "speech_ru.xml"
+        continue
+    endif
+    if NAME == "speech_pl.xml"
+        continue
+    endif
+    if NAME == "speech_ja.xml"
+        continue
+    endif
+    if NAME == "speech_jp.xml"
+        continue
+    endif
+    if NAME == "speech_zh.xml"
+        continue
+    endif
+    if NAME == "speech_ko.xml"
+        continue
+    endif
+    if NAME == "speech_pt.xml"
+        continue
+    endif
+    if NAME == "speech_nl.xml"
+        continue
+    endif
+    if NAME == "speech_sv.xml"
+        continue
+    endif
+    if NAME == "speech_no.xml"
+        continue
+    endif
+    if NAME == "speech_da.xml"
+        continue
+    endif
+    if NAME == "speech_fi.xml"
+        continue
+    endif
+    if NAME == "speech_tr.xml"
+        continue
+    endif
+    if NAME == "speech_cs.xml"
+        continue
+    endif
+    if NAME == "speech_hu.xml"
+        continue
+    endif
+    if NAME == "speech_ro.xml"
+        continue
+    endif
+    if NAME == "speech_el.xml"
+        continue
+    endif
+    if NAME == "speech_ar.xml"
+        continue
+    endif
+    if NAME == "speech_th.xml"
+        continue
+    endif
+    if NAME == "speech_he.xml"
+        continue
+    endif
+    if NAME == "speech_id.xml"
+        continue
+    endif
+    if NAME == "speech_ms.xml"
+        continue
+    endif
+    if NAME == "speech_vi.xml"
+        continue
+    endif
+    if NAME == "speech_uk.xml"
+        continue
+    endif
+    if NAME == "speech_bg.xml"
+        continue
+    endif
+    if NAME == "speech_hr.xml"
+        continue
+    endif
+    if NAME == "speech_sk.xml"
+        continue
+    endif
+    if NAME == "speech_sl.xml"
+        continue
+    endif
+    if NAME == "speech_sr.xml"
+        continue
+    endif
+    if NAME == "speech_lt.xml"
+        continue
+    endif
+    if NAME == "speech_lv.xml"
+        continue
+    endif
+    if NAME == "speech_et.xml"
+        continue
+    endif
+    if NAME == "speech_hi.xml"
+        continue
+    endif
+    if NAME == "speech_bn.xml"
+        continue
+    endif
+    if NAME == "speech_ta.xml"
+        continue
+    endif
+    if NAME == "speech_te.xml"
+        continue
+    endif
+    if NAME == "speech_ml.xml"
+        continue
+    endif
+    if NAME == "speech_gu.xml"
+        continue
+    endif
+    if NAME == "speech_kn.xml"
+        continue
+    endif
+    if NAME == "speech_pa.xml"
+        continue
+    endif
+    if NAME == "speech_ur.xml"
+        continue
+    endif
+    if NAME == "speech_fa.xml"
+        continue
+    endif
+    if NAME == "speech_sw.xml"
+        continue
+    endif
+    if NAME == "speech_am.xml"
+        continue
+    endif
+    if NAME == "speech_af.xml"
+        continue
+    endif
+    if NAME == "speech_xh.xml"
+        continue
+    endif
+    if NAME == "speech_zu.xml"
+        continue
+    endif
+    if NAME == "speech_mn.xml"
+        continue
+    endif
+    if NAME == "speech_my.xml"
+        continue
+    endif
+    if NAME == "speech_si.xml"
+        continue
+    endif
+    if NAME == "speech_ne.xml"
+        continue
+    endif
+    if NAME == "speech_lo.xml"
+        continue
+    endif
+    if NAME == "speech_km.xml"
+        continue
+    endif
+    if NAME == "speech_ckb.xml"
+        continue
+    endif
+    if NAME == "speech_ku.xml"
+        continue
+    endif
+    if NAME == "speech_gl.xml"
+        continue
+    endif
+    if NAME == "speech_eu.xml"
+        continue
+    endif
+    if NAME == "speech_ga.xml"
+        continue
+    endif
+    if NAME == "speech_mt.xml"
+        continue
+    endif
+    if NAME == "speech_is.xml"
+        continue
+    endif
+    if NAME == "speech_bs.xml"
+        continue
+    endif
+    if NAME == "speech_az.xml"
+        continue
+    endif
+    if NAME == "speech_ka.xml"
+        continue
+    endif
+    if NAME == "speech_sq.xml"
+        continue
+    endif
+    if NAME == "speech_ha.xml"
+        continue
+    endif
+    if NAME == "speech_yo.xml"
+        continue
+    endif
+    if NAME == "speech_ig.xml"
+        continue
+    endif
+    if NAME == "speech_tg.xml"
+        continue
+    endif
+    if NAME == "speech_uz.xml"
+        continue
+    endif
+    if NAME == "speech_kk.xml"
+        continue
+    endif
+    if NAME == "speech_tk.xml"
+        continue
+    endif
+    if NAME == "speech_tk.xml"
+        continue
+    endif
+
+
+    set FULLNAME string FOLDER
+    string FULLNAME += \
+    string FULLNAME += NAME
+
+    if SIZE == 0    # should check TYPE but this one is better
+        set FOLDER string NAME
+    elif SIZE == ZSIZE
+        log FULLNAME PREV_OFFSET SIZE
+    else
+        clog FULLNAME PREV_OFFSET ZSIZE SIZE
+    endif
+
+    math PREV_OFFSET = OFFSET
+next i

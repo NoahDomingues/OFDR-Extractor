@@ -49,3 +49,5 @@ If you have any issues using the tool, let me know in the Discord server's **#‚Å
 I will continue working on this tool to try to fix the issues, but in the meantime... enjoy! =)
 
 **NOTE:** This extraction tool is _not_ confirmed to work with Operation Flashpoint: Red River. I have never tried extracting Red River's files with this tool and it's quite likely it will not work due to different encryption keys. If you would like to try, though, you **must** create an empty "OFDR.exe" file in the Red River installation directory, othewise the tool will not attempt to run.
+
+OFDR Extractor is based on [QuickBMS](https://aluigi.altervista.org/quickbms.htm) by [Aluigi](https://twitter.com/luigi_auriemma).

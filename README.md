@@ -29,7 +29,7 @@ The extraction tool can extract the following file types from the game, which yo
 - 3D model bone maps (`.bm`)
 - DirectX index buffers (`.ib`)
 - DirectX vertex buffers (`.vb`)
-- Textures (`.stf`) - Use a [Hex Editor](https://mh-nexus.de/en/hxd/) to convert to .dds format, then open with [GIMP](https://gimp.org)
+- Textures (`.stf`) - use a [Hex Editor](https://mh-nexus.de/en/hxd/) to convert to .dds format, then open with [GIMP](https://gimp.org) (free) or [Adobe Photoshop](https://www.adobe.com/products/photoshop.html) (paid)
 - Terrains (`.tpk`)
 - Language data files (`.lng`)
 - User Interface (UI) files (`.fui`)
@@ -46,7 +46,7 @@ Only the code used by the extractor is available on GitHub. To download the tool
 
 If you have any issues using the tool, let me know in the Discord server's **#⁠🌐tech-support** or **#⁠💬modding-discussion** channel.
 
-I will continue working on this tool to try to fix the issues, but in the meantime... enjoy! =)
+I will continue working on this tool to try to fix the issues... but in the meantime, enjoy! =)
 
 **NOTE:** This extraction tool is _not_ confirmed to work with Operation Flashpoint: Red River. I have never tried extracting Red River's files with this tool and it's quite likely it will not work due to different encryption keys. If you would like to try, though, you **must** create an empty "OFDR.exe" file in the Red River installation directory, othewise the tool will not attempt to run.
 

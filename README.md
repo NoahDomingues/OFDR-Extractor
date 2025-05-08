@@ -25,7 +25,7 @@ The extraction tool can extract the following file types from the game, which yo
 
 - XML config files (`.xml`) - [Windows Notepad](https://apps.microsoft.com/detail/9MSMLRH6LZF3) (or any other text editor), these are the easiest files to modify
 - Audio/sounds (`.fsb`) - [Game Extractor](https://sourceforge.net/projects/gameextractor/)
-- Havok 3D skeletons/animations (.hkx) - [Havok Content Tools 2012](https://www.softpedia.com/get/Programming/Other-Programming-Files/Havok-Content-Tools.shtml#download)
+- Havok 3D skeletons/animations (`.hkx`) - [Havok Content Tools 2012](https://www.softpedia.com/get/Programming/Other-Programming-Files/Havok-Content-Tools.shtml#download)
 - 3D model bone maps (`.bm`)
 - DirectX index buffers (`.ib`)
 - DirectX vertex buffers (`.vb`)

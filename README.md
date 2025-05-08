@@ -15,9 +15,9 @@ Download the `OFDR Extractor.exe` file below, place it in your game installation
 
 Currently, **some files extracted by this tool will be corrupted** to a degree, particularly larger XML files (over 256KB). Most of the files I have been able to check (other XMLs, and audio files) have remained intact, however.
 
-Also, the tool does not maintain the directory structure of extracted files higher than 1 level. So you will have to move them about manually to put them into the right folder structure inside /data_win to make the game read them.
+Also, the tool does not maintain the directory structure of extracted files higher than 1 level. So you will have to move them about manually to put them into the right folder structure inside `/data_win` to make the game read them.
 
-Once you have modified the extracted files, **you must put them inside the correct directory in the /data_win folder for the game to read them**. The Extraction tool will ask you at the end of the extraction process if you would like it to create these folders to help you.
+Once you have modified the extracted files, **you must put them inside the correct directory in the `/data_win` folder for the game to read them**. The Extraction tool will ask you at the end of the extraction process if you would like it to create these folders to help you.
 
 ## OFDR Modding
 

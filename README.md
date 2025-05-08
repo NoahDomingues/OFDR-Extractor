@@ -3,7 +3,7 @@ A simple extraction tool for unpacking Operation Flashpoint: Dragon Rising's gam
 
 
 
-![Operation Flashpoint: Dragon Rising Game Extractor](https://github.com/user-attachments/assets/8d60e819-8641-4103-9edc-ecfb420bce03)
+[<img src="https://github.com/user-attachments/assets/8d60e819-8641-4103-9edc-ecfb420bce03">](https://discord.gg/Z88NnTgpWU)
 
 
 

@@ -9,11 +9,11 @@ A simple extraction tool for unpacking Operation Flashpoint: Dragon Rising's gam
 
 ## OFDR Game Extractor v1.0 
 
-Here is the first release of my Game Extractor for **Operation Flashpoint: Dragon Rising**, a 2009 tactical mil-sim shooter game released by Codemasters in 2009. This tool is designed to decompress, decrypt, and extract files from the `win_000` archives in the game installation folder (inside which most of the game content is stored).
+Here is the first release of my Game Extractor for **[Operation Flashpoint: Dragon Rising](https://en.wikipedia.org/wiki/Operation_Flashpoint:_Dragon_Rising)**, a realistic, tactical mil-sim shooter game released by [Codemasters](https://www.codemasters.com) in 2009. This tool is designed to decompress, decrypt, and extract files from the `win_000` archives in the game installation folder (inside these archives is where most of the game's content is stored).
 
-Download the .exe below, place it in your game installation folder, and run it. The files will be extracted to the _extract folder in your game installation directory. There will be approximately 5GB of extracted files on total (slightly above 5GB).
+Download the `OFDR Extractor.exe` file below, place it in your game installation folder, and run it. The files will be extracted to the `_extract` folder in your game installation directory. There will be approximately 5GB of extracted files on total (slightly above 5GB).
 
-Curently, **some files extracted by this tool will be corrupted** to a degree, particularly larger XML files (over 256KB). Most of the files I have been able to check (other XMLs, and audio files) have remained intact, however.
+Currently, **some files extracted by this tool will be corrupted** to a degree, particularly larger XML files (over 256KB). Most of the files I have been able to check (other XMLs, and audio files) have remained intact, however.
 
 Also, the tool does not maintain the directory structure of extracted files higher than 1 level. So you will have to move them about manually to put them into the right folder structure inside /data_win to make the game read them.
 
@@ -29,7 +29,7 @@ The extraction tool can extract the following file types from the game, which yo
 - 3D model bone maps (`.bm`)
 - DirectX index buffers (`.ib`)
 - DirectX vertex buffers (`.vb`)
-- Textures (`.stf`) - use a [Hex Editor](https://mh-nexus.de/en/hxd/) to convert to .dds format, then open with [GIMP](https://gimp.org) (free) or [Adobe Photoshop](https://www.adobe.com/products/photoshop.html) (paid)
+- Textures (`.stf`) - use a [Hex Editor](https://mh-nexus.de/en/hxd/) to convert to `.dds` format, then open with [GIMP](https://gimp.org) (free) or [Adobe Photoshop](https://www.adobe.com/products/photoshop.html) (paid)
 - Terrains (`.tpk`)
 - Language data files (`.lng`)
 - User Interface (UI) files (`.fui`)

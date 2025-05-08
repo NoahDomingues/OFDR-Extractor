@@ -2,9 +2,14 @@
 A simple extraction tool for unpacking Operation Flashpoint: Dragon Rising's game files. 🐉
 
 
+
+![Operation Flashpoint: Dragon Rising Game Extractor](https://github.com/user-attachments/assets/8d60e819-8641-4103-9edc-ecfb420bce03)
+
+
+
 ## OFDR Game Extractor v1.0 
 
-Here is the first release of my Game Extractor for **Operation Flashpoint: Dragon Rising**, a 2009 tactical mil-sim shooter game released by Codemasters in 2009. This tool is designed to decompress, decrypt, and extract files from the ~~win_000~~ archives in the game installation folder (inside which most of the game content is stored). 
+Here is the first release of my Game Extractor for **Operation Flashpoint: Dragon Rising**, a 2009 tactical mil-sim shooter game released by Codemasters in 2009. This tool is designed to decompress, decrypt, and extract files from the `win_000` archives in the game installation folder (inside which most of the game content is stored).
 
 Download the .exe below, place it in your game installation folder, and run it. The files will be extracted to the _extract folder in your game installation directory. There will be approximately 5GB of extracted files on total (slightly above 5GB).
 
@@ -12,14 +17,35 @@ Curently, **some files extracted by this tool will be corrupted** to a degree, p
 
 Also, the tool does not maintain the directory structure of extracted files higher than 1 level. So you will have to move them about manually to put them into the right folder structure inside /data_win to make the game read them.
 
-Once you have modified the extracted files, you must put them inside the correct directory in the /data_win folder for the game to read them. The Extraction tool will ask you at the end of the extraction process if you would like it to create these folders to help you.
+Once you have modified the extracted files, **you must put them inside the correct directory in the /data_win folder for the game to read them**. The Extraction tool will ask you at the end of the extraction process if you would like it to create these folders to help you.
+
+## OFDR Modding
+
+The extraction tool can extract the following file types from the game, which you can modify to make changes to the game. Some files will require special software programs to open/modify, some of which I have also listed.
+
+- XML config files (`.xml`) - Windows Notepad or any other text editor, easiest files to mod
+- Audio/sounds (`.fsb`) - [Game Extractor](https://sourceforge.net/projects/gameextractor/)
+- Havok 3D skeletons/animations (.hkx) - [Havok Content Tools 2012](https://www.softpedia.com/get/Programming/Other-Programming-Files/Havok-Content-Tools.shtml#download)
+- 3D model bone maps (`.bm`)
+- DirectX index buffers (`.ib`)
+- DirectX vertex buffers (`.vb`)
+- Textures (`.stf`) - Use a [Hex Editor](https://mh-nexus.de/en/hxd/) to convert to .dds format, then open with [GIMP](https://gimp.org)
+- Terrains (`.tpk`)
+- Language data files (`.lng`)
+- User Interface (UI) files (`.fui`)
+- Unknown hints files (`.hints`)
+- Unknown met files (`.met`)
+
+**Any of these files can be opened using a [Hex Editor](https://mh-nexus.de/en/hxd/) to view the file's basic binary data, however.**
 
 ## Download
 
 Only the code used by the extractor is available on GitHub. To download the tool itself, you must join the [Discord server](https://discord.gg/Z88NnTgpWU) and navigate to the **#🛠game-unpacker-tool** channel to download the .exe application that you can run.
 
-![image](https://github.com/user-attachments/assets/f61046f5-1dc5-4b0c-87f8-4a94d6cbac96)(https://discord.gg/Z88NnTgpWU)
+[<img src="https://github.com/user-attachments/assets/f61046f5-1dc5-4b0c-87f8-4a94d6cbac96">](https://discord.gg/Z88NnTgpWU)
 
-If you have any issues, let me know in the Discord server's **#⁠🌐tech-support** or ⁠**#💬modding-discussion channel**.
+If you have any issues using the tool, let me know in the Discord server's **#⁠🌐tech-support** or **#⁠💬modding-discussion** channel.
 
 I will continue working on this tool to try to fix the issues, but in the meantime... enjoy! =)
+
+**NOTE:** This extraction tool is _not_ confirmed to work with Operation Flashpoint: Red River. I have never tried extracting Red River's files with this tool and it's quite likely it will not work due to different encryption keys. If you would like to try, though, you **must** create an empty "OFDR.exe" file in the Red River installation directory, othewise the tool will not attempt to run.

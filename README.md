@@ -9,7 +9,7 @@ A simple extraction tool for unpacking Operation Flashpoint: Dragon Rising's gam
 
 ## OFDR Game Extractor v1.0 
 
-Here is the first release of my Game Extractor for **[Operation Flashpoint: Dragon Rising](https://en.wikipedia.org/wiki/Operation_Flashpoint:_Dragon_Rising)**, a realistic, tactical mil-sim shooter game released by [Codemasters](https://www.codemasters.com) in 2009. This tool is designed to decompress, decrypt, and extract files from the `win_000` archives in the game installation folder (inside these archives is where most of the game's content is stored).
+OFDR Extractor is a simple tool to unpack the game files of **[Operation Flashpoint: Dragon Rising](https://en.wikipedia.org/wiki/Operation_Flashpoint:_Dragon_Rising)**, a realistic, tactical mil-sim shooter game released by [Codemasters](https://www.codemasters.com) in 2009. This tool is designed to decompress, decrypt, and extract files from the `win_000` archives in the game installation folder (inside these archives is where most of the game's content is stored).
 
 Download the `OFDR Extractor.exe` file below, place it in your game installation folder, and run it. The files will be extracted to the `_extract` folder in your game installation directory. There will be approximately 5GB of extracted files on total (slightly more than 5GB).
 

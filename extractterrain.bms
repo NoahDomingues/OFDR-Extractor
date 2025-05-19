@@ -1,8 +1,9 @@
-# Operation Flashpoint: Dragon Rising - Terrain Extraction Script v1.0
+# Operation Flashpoint - Terrain Extraction Script v1.1
+# Works for both Dragon Rising and Red River
 # note: you MUST run compile.bms first!
 # note: you MUST run extract.bms first!
 # note: this script is an unofficial workaround... but it appears to work
-# note: this script extracts the largest terrain file from the OFDR game files (>1GB)
+# note: this script extracts the largest terrain file from the OFP game files (>1GB)
 # script built for ExtractionAgent, based on QuickBMS
 # QuickBMS http://aluigi.org/papers.htm#quickbms
 # -------------------------------------------------------------------------------

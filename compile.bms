@@ -1,4 +1,5 @@
-# Operation Flashpoint: Dragon Rising - Compilation Script v1.0
+# Operation Flashpoint - Compilation Script v1.1
+# Works for both Dragon Rising and Red River
 # note: this script compiles the win_000 files into one win_000.full file
 # note: after running this script, run extract.bms to unpack the files
 # script built for ExtractionAgent, based on QuickBMS

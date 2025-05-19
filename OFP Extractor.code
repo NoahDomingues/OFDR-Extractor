@@ -1,6 +1,6 @@
 @echo off
 title Operation Flashpoint Game Extractor by Noah Domingues
-color a
+color A
 echo(
 echo ========= Operation Flashpoint (CM) Game Extractor - v1.1 =========
 echo ======================== By Noah Domingues ========================
@@ -48,7 +48,8 @@ if exist "OFDR.exe" (
 
 :: Check for win_000.nfs
 if not exist "win_000.nfs" (
-    echo ERROR: win_000.nfs file not found! Please put OFP Extractor and the files that come with it inside your game installation directory and try again!
+    color 4F
+    echo ERROR: win_000.nfs file not found! Please put OFP Extractor inside your game installation directory and try again!
     pause >nul
     exit /b
 ) else (
@@ -111,6 +112,7 @@ echo Extraction stage 2 complete.
 
 echo(
 
+color A
 title OFDR Game Extractor - Extraction Successful!
 echo ===================== GAME EXTRACTED SUCCESSFULLY =====================
 
@@ -119,7 +121,7 @@ echo(
 :: Ask user if they would like to create template directories in data_win for modded game files
 setlocal
 
-echo Would you like to make directories in your data_win folder to help you add modded files to the game? (Y/N)
+echo Would you like to make directories in your data_win folder to help you add modded files to the game (this is designed for Dragon Rising, but Red River may share a similar directory structure)? (Y/N)
 set /p user_input=
 
 if /i "%user_input%"=="y" goto make_dirs
@@ -141,7 +143,7 @@ title OFP Game Extractor - Extraction Successful!
 :continue
 echo(
 
-echo WARNING: The files have been extracted to the "_extract" directory in your game installation folder. In this folder, you may come accross files with "_00000001" in the filename. THESE FILES MAY BE CORRUPTED. However, this is not an issue; these files are not part of the game and can safely be deleted. So far, I have only found a few files that extract corrupted, such as damage_data.xml in the /damage_data folder. Not all XML files that appear corrupted are actually corrupted; some of these are simply binary XMLs that need to be converted to standard XML format using Petar's Ego File Converter.
+echo WARNING: The files have been extracted to the "_extract" directory in your game installation folder. In this folder, you may come accross files with "_00000001" in the filename. THESE FILES MAY BE CORRUPTED. However, this is not an issue; these files are not part of the game and can safely be deleted. So far, I have only found a few files that extract corrupted, such as damage_data.xml in the /damage_data folder. Not all XML files that appear corrupted are actually corrupted; some of these are simply binary XMLs that need to be converted to standard XML format using Petar's Ego File Converter. More information is available on GitHub: https://github.com/NoahDomingues/OFP-Extractor
 
 echo(
 

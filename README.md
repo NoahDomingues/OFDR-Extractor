@@ -1,5 +1,5 @@
-# OFDR Extractor
-A simple extraction tool for unpacking **Operation Flashpoint: Dragon Rising**'s game files. 🐉
+# Operation Flashpoint Game Extractor
+A simple extraction tool for unpacking **Operation Flashpoint**'s game files. 🐉
 
 
 
@@ -7,11 +7,11 @@ A simple extraction tool for unpacking **Operation Flashpoint: Dragon Rising**'s
 
 
 
-## OFDR Game Extractor v1.0 
+## OFP Game Extractor v1.1
 
-OFDR Extractor is a simple tool to unpack the game files of **[Operation Flashpoint: Dragon Rising](https://en.wikipedia.org/wiki/Operation_Flashpoint:_Dragon_Rising)**, a realistic, tactical mil-sim shooter game released by [Codemasters](https://www.codemasters.com) in 2009. This tool is designed to decompress, decrypt, and extract files from the `win_000` archives in the game installation folder (inside these archives is where most of the game's content is stored).
+OFP Extractor is a simple tool to unpack the game files of **[Operation Flashpoint: Dragon Rising](https://en.wikipedia.org/wiki/Operation_Flashpoint:_Dragon_Rising)** and **[Operation Flashpoint: Red River](https://en.wikipedia.org/wiki/Operation_Flashpoint:_Red_River)**, both realistic, tactical mil-sim shooter games released by [Codemasters](https://www.codemasters.com) in 2009 and 2011 respectively. This tool is designed to decompress, decrypt, and extract files from the `win_000` archives in the game installation folder (inside these archives is where most of the game's content is stored).
 
-Download the `OFDR Extractor.exe` file below, place it in your game installation folder, and run it. The files will be extracted to the `_extract` folder in your game installation directory. There will be approximately 5GB of extracted files on total (slightly more than 5GB).
+Download the `OFP Extractor.exe` file below, place it in your game installation folder, and run it. The files will be extracted to the `_extract` folder in your game installation directory. There will be approximately 5GB of extracted files on total (slightly more than 5GB) for Dragon Rising, and under 3GB for Red River.
 
 Currently, **some files extracted by this tool will be corrupted** to a degree, particularly larger XML files (over 256KB). Most of the files I have been able to check (other XMLs, and audio files) have remained intact, however.
 
@@ -19,19 +19,20 @@ Also, the tool does not maintain the directory structure of extracted files high
 
 Once you have modified the extracted files, **you must put them inside the correct directory in the `/data_win` folder for the game to read them**. The extraction tool will ask you at the end of the extraction process if you would like it to create these folders to help you.
 
-## OFDR Modding
+## OFDR/OFRR Modding
 
 The extraction tool can extract the following file types from the game, which you can modify to make changes to the game. Some files will require special software programs to open/modify, some of which I have also listed.
 
-- XML config files (`.xml`) - [Windows Notepad](https://apps.microsoft.com/detail/9MSMLRH6LZF3) (or any other text editor), these are the easiest files to modify
+- XML config files (`.xml`) - [Windows Notepad](https://apps.microsoft.com/detail/9MSMLRH6LZF3) (or any other text editor), these are the easiest files to modify (binary XMLs will require conversion prior to editing, using [Ego FIle Converter](https://p2t5r.itch.io/ego-file-converter))
 - Audio/sounds (`.fsb`) - [Game Extractor](https://sourceforge.net/projects/gameextractor/)
 - Havok 3D skeletons/animations (`.hkx`) - [Havok Content Tools 2012](https://www.softpedia.com/get/Programming/Other-Programming-Files/Havok-Content-Tools.shtml#download)
 - 3D model bone maps (`.bm`)
 - DirectX index buffers (`.ib`)
 - DirectX vertex buffers (`.vb`)
 - Textures (`.stf`) - use a [Hex Editor](https://mh-nexus.de/en/hxd/) to convert to `.dds` format, then open with [GIMP](https://gimp.org) (free) or [Adobe Photoshop](https://www.adobe.com/products/photoshop.html) (paid)
-- Terrains (`.tpk`)
-- Language data files (`.lng`)
+- Terrains/terrain textures (`.tpk`) - [Ego File Converter](https://p2t5r.itch.io/ego-file-converter) (may not work)
+- Language data files (`.lng`) - [Ego Language Editor](https://p2t5r.itch.io/ego-language-editor)
+- Jpak archives (`.jpk`) - [Ego JPK Archiver](https://p2t5r.itch.io/ego-jpk-archiver)
 - User Interface (UI) files (`.fui`)
 - Unknown hints files (`.hints`)
 - Unknown met files (`.met`)
@@ -48,6 +49,5 @@ If you have any issues using the tool, let me know in the Discord server's **#�
 
 I will continue working on this tool to try to fix the issues... but in the meantime, enjoy! =)
 
-**NOTE:** This extraction tool is _not_ confirmed to work with Operation Flashpoint: Red River. I have never tried extracting Red River's files with this tool, and it's quite likely that it will not work due to different encryption keys. If you would like to try, though, you **must** create an empty "OFDR.exe" file in the Red River installation directory, otherwise the tool will not attempt to run.
-
-OFDR Extractor is based on [QuickBMS](https://aluigi.altervista.org/quickbms.htm) by [Aluigi](https://twitter.com/luigi_auriemma).
+#
+OFP Extractor is based on [QuickBMS](https://aluigi.altervista.org/quickbms.htm) by [Aluigi](https://twitter.com/luigi_auriemma).

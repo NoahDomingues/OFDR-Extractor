@@ -3,7 +3,7 @@ A simple extraction tool for unpacking **Operation Flashpoint**'s game files. ðŸ
 
 
 
-[<img src="https://github.com/user-attachments/assets/8d60e819-8641-4103-9edc-ecfb420bce03">](https://discord.gg/Z88NnTgpWU)
+[<img src="https://github.com/user-attachments/assets/63ee6f6f-5b81-4b77-b522-a6a9b7046639">](https://discord.gg/Z88NnTgpWU)
 
 
 

@@ -10,6 +10,8 @@ echo(
 echo -------- OFP Discord Server: https://discord.gg/Z88NnTgpWU --------
 echo(
 
+:: Last updated May 19 2025
+
 echo Would you like to extract Operation Flashpoint's game files?
 echo (Press ENTER to continue or 'n' to quit)
 set /p user_input=
@@ -41,6 +43,7 @@ if exist "OFDR.exe" (
     echo Operation Flashpoint: Red River located, proceeding...
 ) else (
     color 4F
+    title OFP Game Extractor - Error!
     echo ERROR: Please put OFP Extractor inside your game installation directory and try again!
     pause >nul
     exit /b
@@ -49,6 +52,7 @@ if exist "OFDR.exe" (
 :: Check for win_000.nfs
 if not exist "win_000.nfs" (
     color 4F
+    title OFP Game Extractor - Error!
     echo ERROR: win_000.nfs file not found! Please put OFP Extractor inside your game installation directory and try again!
     pause >nul
     exit /b
@@ -59,6 +63,7 @@ if not exist "win_000.nfs" (
 :: Check for win_000.full
 if not exist "win_000.full" (
     echo WARNING: win_000.full archive does not exist, creating it now...
+    title OFP Game Extractor - Compiling Archives...
     ExtractionAgent compile.bms win_000.nfs "."
     echo win_000.full archive compiled successfully, proceeding...
     )
@@ -68,6 +73,7 @@ if not exist "win_000.full" (
 
 :: Check if extraction directory already exists, and act accordingly
 if exist "_extract\" (
+    title OFP Game Extractor - Awaiting Input!
     echo WARNING: Extraction directory already exists! Please rename, delete or move the _extract folder to avoid overwriting existing files, and then try again!
     echo Do you want to delete the existing files? (Y/N)
     
@@ -82,6 +88,7 @@ if exist "_extract\" (
 )
 
 :continue
+title OFP Game Extractor - Deleting Extraction Directory...
 echo(
 echo Deleting existing _extract directory, this may take a while...
 rmdir /s /q "_extract"
@@ -95,6 +102,7 @@ echo Extraction directory created successfully, proceeding...
 
 
 :: Unpack game files
+title OFP Game Extractor - Extracting Files...
 echo(
 echo Beginning stage 1 extraction, this may take a while...
 ExtractionAgent -K extract.bms win_000.nfs "_extract"
@@ -113,7 +121,7 @@ echo Extraction stage 2 complete.
 echo(
 
 color A
-title OFDR Game Extractor - Extraction Successful!
+title OFP Game Extractor - Extraction Successful!
 echo ===================== GAME EXTRACTED SUCCESSFULLY =====================
 
 echo(

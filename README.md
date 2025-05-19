@@ -35,7 +35,7 @@ The extraction tool can extract the following file types from the game, which yo
 - Jpak archives (`.jpk`) - [Ego JPK Archiver](https://p2t5r.itch.io/ego-jpk-archiver)
 - User Interface (UI) files (`.fui`)
 - Unknown hints files (`.hints`)
-- Unknown met files (`.met`)
+- Unknown metadata files, possibly object metadata (`.met`)
 
 **Any of these files can be opened using a [Hex Editor](https://mh-nexus.de/en/hxd/) to view the file's basic binary data, however.**
 

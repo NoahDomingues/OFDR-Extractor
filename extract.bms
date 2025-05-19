@@ -1,4 +1,5 @@
-# Operation Flashpoint: Dragon Rising - Extraction Script v1.0
+# Operation Flashpoint - Extraction Script v1.1
+# Works for both Dragon Rising and Red River
 # note: you MUST run compile.bms first!
 # note: this script is an unofficial workaround... but it appears to work without crashing
 # note: the folders are not handled correctly so there will be no sub-sub folders

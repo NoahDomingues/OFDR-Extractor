@@ -49,5 +49,7 @@ If you have any issues using the tool, let me know in the Discord server's **#�
 
 I will continue working on this tool to try to fix the issues... but in the meantime, enjoy! =)
 
+**⭐ If this tool was of any use to you, please consider giving it a Star - it would make my day! ⭐**
+
 #
 OFP Extractor is based on [QuickBMS](https://aluigi.altervista.org/quickbms.htm) by [Aluigi](https://twitter.com/luigi_auriemma).

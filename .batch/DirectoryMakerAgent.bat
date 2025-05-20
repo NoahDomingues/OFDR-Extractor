@@ -1,6 +1,7 @@
 @echo off
-title OFP Game Extractor - Creating Directories...
+:: Last updated May 19 2025 - version 1.1
 :: This script was designed to make directories for Dragon Rising. However, Red River may share many of the same directories, so it may be useful when modding RR.
+title OFP Game Extractor - Creating Directories...
 color A
 setlocal enabledelayedexpansion
 

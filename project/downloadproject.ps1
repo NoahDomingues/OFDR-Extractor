@@ -1,6 +1,7 @@
 # download_extractor.ps1
 # A PowerShell script to download and extract the OFP-Extractor repository
-
+# Last updated May 20 2025 - v1.1
+# Noah Domingues - https://github.com/NoahDomingues/OFP-Extractor
 
 # URL for the GitHub repository ZIP (default branch is "main")
 $repoZipUrl = "https://github.com/NoahDomingues/OFP-Extractor/archive/refs/heads/main.zip"

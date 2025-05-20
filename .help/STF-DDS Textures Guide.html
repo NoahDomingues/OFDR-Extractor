@@ -6,63 +6,90 @@
     <title>How to Convert .STF Textures to .DDS in Operation Flashpoint</title>
     <style>
         body {
-            background-color: black;
-            color: yellow;
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            line-height: 1.6;
-        }
-        h1, h2 {
-            text-align: center;
+            background-color: #181818;
+            color: #FFD700;
+            font-family: "Segoe UI", sans-serif;
+            margin: 0;
+            padding: 20px;
         }
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: auto;
             padding: 20px;
-            border: 2px solid yellow;
             background-color: #222;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
         }
-        .note {
-            margin-top: 20px;
-            font-style: italic;
+        h1 {
             text-align: center;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 22px;
+            border-bottom: 2px solid #FFD700;
+            padding-bottom: 5px;
+            margin-top: 20px;
+        }
+        ol {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
         }
         code {
-            background-color: yellow;
-            color: black;
-            padding: 2px 5px;
+            background-color: #FFD700;
+            color: #000;
+            padding: 3px 6px;
+            border-radius: 4px;
             font-family: monospace;
+        }
+        .note {
+            text-align: center;
+            font-style: italic;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #333;
+            border-radius: 5px;
+        }
+        a {
+            color: #FFD700;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>How to Convert .STF Textures to .DDS in Operation Flashpoint</h1>
-        
+
         <h2>Required Tools</h2>
-        <p>You will need a hex editor to modify the file headers. <strong>Hex Editor Neo</strong> is a recommended free tool.</p>
+        <p>You will need a hex editor to modify the file headers. <strong>Hex Editor Neo</strong> and <strong>HxD</strong> are recommended free tools.</p>
 
         <h2>Step-by-Step Conversion</h2>
         <ol>
-            <li>Open the `.STF` texture file in your hex editor.</li>
+            <li>Open the <code>.STF</code> texture file in your hex editor.</li>
             <li>Remove everything from the start of the file up to <code>DEC 2048</code> or <code>HEX 00000800</code>. The following might work: <code>44 44 53 20 7C 00 00 00 07 10 08 00 00 04 00 00</code></li>
-            <li>Take the contents of a valid `.DDS` header file and paste it at the top of the modified texture file.</li>
-            <li>Save the file as a `.DDS` using the format **5.6.5** (for non-alpha textures).</li>
-            <li>Open the newly saved `.DDS` in the hex editor, remove the new DDS header added by Photoshop, then paste back the original header from the `.STF` file.</li>
+            <li>Take the contents of a valid <code>.DDS</code> header file and paste it at the top of the modified texture file.</li>
+            <li>Save the file as a <code>.DDS</code> using the format <strong>5.6.5</strong> (for non-alpha textures).</li>
+            <li>Open the newly saved <code>.DDS</code> in the hex editor, remove the new DDS header added by Photoshop, then paste back the original header from the <code>.STF</code> file.</li>
             <li>Place the edited texture into the correct folder.</li>
         </ol>
 
         <h2>Final Step</h2>
-        <p>If you are running <strong>version 1.00</strong> of the game, the texture should now appear in-game!</p>
+        <p>If you are running <strong>version 1.00</strong>, <strong>1.03</strong>, or <strong>1.02 (patched)</strong> of the game, the texture should now appear in-game!</p>
 
         <div class="note">
             <p>Thank you to <strong>TemplarGFX</strong> for this guide.</p>
         </div>
         <div class="note">
-            <p>Join our <a href="https://discord.gg/Z88NnTgpWU" target="_blank"><strong>Discord server:</strong></a>  <a href="https://discord.gg/Z88NnTgpWU" target="_blank">https://discord.gg/Z88NnTgpWU</a></p>
+            <p>Join our <a href="https://discord.gg/Z88NnTgpWU" target="_blank">Discord server</a>: <a href="https://discord.gg/Z88NnTgpWU" target="_blank">https://discord.gg/Z88NnTgpWU</a></p>
         </div>
         <div class="note">
-            <p>GitHub: <a href="https://discord.gg/Z88NnTgpWU" target="_blank">https://github.com/NoahDomingues/OFP-Extractor</a></p>
+            <p>GitHub: <a href="https://github.com/NoahDomingues/OFP-Extractor" target="_blank">https://github.com/NoahDomingues/OFP-Extractor</a></p>
         </div>
     </div>
 </body>

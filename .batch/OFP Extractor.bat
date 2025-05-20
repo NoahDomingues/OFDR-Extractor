@@ -10,6 +10,8 @@ echo(
 echo -------- OFP Discord Server: https://discord.gg/Z88NnTgpWU --------
 echo(
 
+:: Last updated May 19 2025 - version 1.1
+
 echo Would you like to extract Operation Flashpoint's game files?
 echo (Press ENTER to continue or 'n' to quit)
 set /p user_input=

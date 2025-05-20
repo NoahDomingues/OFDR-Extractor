@@ -47,9 +47,9 @@ Only the code used by the extractor is available on GitHub. To download the tool
 
 If you have any issues using the tool, let me know in the Discord server's **#⁠🌐tech-support** or **#⁠💬modding-discussion** channel.
 
-I will continue working on this tool to try to fix the issues... but in the meantime, enjoy! =)
+I will continue working on this tool to try to fix the issues, and if there is any way you can contribute or help fix what's wrong with the tool that would be amazing. But in the meantime... enjoy! =)
 
 **⭐ If this tool was of any use to you, please consider giving it a Star - it would make my day! ⭐**
 
 #
-OFP Extractor is based on [QuickBMS](https://aluigi.altervista.org/quickbms.htm) by [Aluigi](https://twitter.com/luigi_auriemma).
+OFP Extractor is based on [QuickBMS](https://aluigi.altervista.org/quickbms.htm) by [Aluigi](https://twitter.com/luigi_auriemma). Thank you to TemplarGFX, tvig0r0us, and Jaum for helping out with this project!

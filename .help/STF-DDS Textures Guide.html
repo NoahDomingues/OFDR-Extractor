@@ -45,7 +45,7 @@
         <h2>Step-by-Step Conversion</h2>
         <ol>
             <li>Open the `.STF` texture file in your hex editor.</li>
-            <li>Remove everything from the start of the file up to <code>DEC 2048</code> or <code>HEX 00000800</code>.</li>
+            <li>Remove everything from the start of the file up to <code>DEC 2048</code> or <code>HEX 00000800</code>. The following might work: <code>44 44 53 20 7C 00 00 00 07 10 08 00 00 04 00 00</code></li>
             <li>Take the contents of a valid `.DDS` header file and paste it at the top of the modified texture file.</li>
             <li>Save the file as a `.DDS` using the format **5.6.5** (for non-alpha textures).</li>
             <li>Open the newly saved `.DDS` in the hex editor, remove the new DDS header added by Photoshop, then paste back the original header from the `.STF` file.</li>

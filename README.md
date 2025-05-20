@@ -34,6 +34,8 @@ The extraction tool can extract the following file types from the game, which yo
 - Language data files (`.lng`) - [Ego Language Editor](https://p2t5r.itch.io/ego-language-editor)
 - Jpak archives (`.jpk`) - [Ego JPK Archiver](https://p2t5r.itch.io/ego-jpk-archiver)
 - User Interface (UI) files (`.fui`)
+- Fragment shader data files (`.fpo`)
+- Vertex shader data files (`.vpo`)
 - Unknown hints files (`.hints`)
 - Unknown metadata files, possibly object metadata (`.met`)
 

@@ -54,4 +54,4 @@ I will continue working on this tool to try to fix the issues, and if there is a
 **⭐ If this tool was of any use to you, please consider giving it a Star - it would make my day! ⭐**
 
 #
-OFP Extractor is based on [QuickBMS](https://aluigi.altervista.org/quickbms.htm) by [Aluigi](https://twitter.com/luigi_auriemma). Thank you to TemplarGFX, tvig0r0us, and Jaum for helping out with this project!
+OFP Extractor is based on [QuickBMS](https://aluigi.altervista.org/quickbms.htm) by [Aluigi](https://twitter.com/luigi_auriemma). Thank you to TemplarGFX, tvig0r0us, and [Jaum](https://github.com/joaopb0) for helping out with this project!

@@ -1,0 +1,183 @@
+data_win
+data_win\ai
+data_win\ai\globalknowledge
+data_win\ai\quadtrees
+data_win\ai\RuleSystem
+data_win\Audio
+data_win\Audio\speech
+data_win\dispersionsystem
+data_win\engineer_defs
+data_win\gameplay
+data_win\gameplay\object_damage
+data_win\gameplay\OSD
+data_win\GOMetadata
+data_win\graphics
+data_win\graphics\2dmap
+data_win\graphics\asset_maps
+data_win\graphics\characters
+data_win\graphics\characters\bodies
+data_win\graphics\characters\bodies\meshes
+data_win\graphics\characters\bodies\textures
+data_win\graphics\characters\damage_data
+data_win\graphics\characters\first_person
+data_win\graphics\characters\first_person\meshes
+data_win\graphics\characters\first_person\texture
+data_win\graphics\characters\heads
+data_win\graphics\characters\heads\meshes
+data_win\graphics\characters\heads\textures
+data_win\graphics\characters\packs
+data_win\graphics\characters\packs\meshes
+data_win\graphics\characters\packs\textures
+data_win\graphics\debris
+data_win\graphics\decals
+data_win\graphics\dynamic_decals
+data_win\graphics\enviroment
+data_win\graphics\enviroment\barriers
+data_win\graphics\enviroment\buildings
+data_win\graphics\enviroment\buildings\textures
+data_win\graphics\enviroment\buildings\textures\lo d0
+data_win\graphics\enviroment\contructions
+data_win\graphics\enviroment\contructions\textures
+data_win\graphics\enviroment\contructions\textures \lod0
+data_win\graphics\enviroment\object
+data_win\graphics\enviroment\object\textures
+data_win\graphics\enviroment\object\textures\lod1
+data_win\graphics\enviroment\object\textures\lod2
+data_win\graphics\enviroment\trees
+data_win\graphics\ground_cover
+data_win\graphics\ingamemap
+data_win\graphics\lakes
+data_win\graphics\lights
+data_win\graphics\lights\texture
+data_win\graphics\mesh
+data_win\graphics\particles
+data_win\graphics\particles\effects
+data_win\graphics\particles\emitters
+data_win\graphics\particles\lights
+data_win\graphics\postprocess
+data_win\graphics\postprocess\postprocesses
+data_win\graphics\postprocess\postprocesses\effect _stacks
+data_win\graphics\postprocess\postprocesses\parame ter_sets
+data_win\graphics\postprocess\postprocesses\parame ter_sets\blur
+data_win\graphics\postprocess\postprocesses\parame ter_sets\copy
+data_win\graphics\postprocess\postprocesses\parame ter_sets\damage
+data_win\graphics\postprocess\postprocesses\parame ter_sets\frontend
+data_win\graphics\postprocess\postprocesses\parame ter_sets\heat_vision
+data_win\graphics\postprocess\postprocesses\parame ter_sets\night_vision
+data_win\graphics\postprocess\postprocesses\parame ter_sets\normal
+data_win\graphics\postprocess\postprocesses\templa tes
+data_win\graphics\postprocess\std
+data_win\graphics\scenes
+data_win\graphics\screen_space_effects
+data_win\graphics\screen_space_effects\ati
+data_win\graphics\screen_space_effects\nv
+data_win\graphics\shaderpack
+data_win\graphics\shaderpack\ati
+data_win\graphics\shaderpack\nv
+data_win\graphics\terrain
+data_win\graphics\terrain\uberload
+data_win\graphics\terrain\uberload\diffusemap
+data_win\graphics\terrain\uberload\normalmap
+data_win\graphics\texture
+data_win\graphics\texture\decals
+data_win\graphics\texture\lakes
+data_win\graphics\texture\particles
+data_win\graphics\texture\post_process
+data_win\graphics\texture\shared
+data_win\graphics\texture\terr
+data_win\graphics\trees
+data_win\graphics\trees\textures
+data_win\graphics\vehicles
+data_win\graphics\weapons
+data_win\graphics\weapons\models
+data_win\graphics\weapons\textures
+data_win\graphics\weapons\textures\shared
+data_win\media
+data_win\media\ActionMap
+data_win\media\ActionMap\legacy
+data_win\media\animations
+data_win\media\behaviors
+data_win\media\buildings
+data_win\media\gameinput
+data_win\media\loc
+data_win\media\metadata
+data_win\media\models
+data_win\media\models\building
+data_win\media\models\terrain_objects
+data_win\media\models\vehicles
+data_win\media\soldiers
+data_win\media\ui
+data_win\media\ui\assets
+data_win\media\ui\assets\art
+data_win\media\ui\assets\art\asset_sets
+data_win\media\ui\assets\art\asset_sets\controller _icons
+data_win\media\ui\assets\art\asset_sets\weapons
+data_win\media\ui\assets\fonts
+data_win\media\ui\cursors
+data_win\media\ui\game_ui
+data_win\media\ui\game_ui\assets
+data_win\media\ui\game_ui\assets\art
+data_win\media\ui\game_ui\assets\art\assets_sets
+data_win\media\ui\game_ui\assets\art\assets_sets\a mmo_rounds
+data_win\media\ui\game_ui\assets\art\assets_sets\c ontroller_icons
+data_win\media\ui\game_ui\assets\art\assets_sets\w eapons
+data_win\media\ui\game_ui\assets\fonts
+data_win\media\ui\game_ui\classes
+data_win\media\ui\game_ui\classes\components
+data_win\media\ui\game_ui\classes\components\commo n
+data_win\media\ui\game_ui\main
+data_win\media\ui\game_ui\osd
+data_win\media\ui\game_ui\screens
+data_win\media\ui\game_ui\screens\blank_screens
+data_win\media\ui\game_ui\screens\in_game
+data_win\media\ui\game_ui\screens\loading_screens
+data_win\media\vehicles
+data_win\media\vehicles\apct
+data_win\media\vehicles\apcw
+data_win\media\vehicles\boat
+data_win\media\vehicles\rwing
+data_win\media\vehicles\trans
+data_win\missions
+data_win\missions\default
+data_win\missions\default\inf0
+data_win\missions\default\profiledata
+data_win\missions\dr
+data_win\missions\dr\dem1
+data_win\missions\dr\inf1
+data_win\missions\dr\inf2
+data_win\missions\dr\inf3
+data_win\missions\dr\inf4
+data_win\missions\dr\inf7
+data_win\missions\dr\inf8
+data_win\missions\dr\spc1
+data_win\missions\dr\spc3
+data_win\missions\dr\spc5
+data_win\missions\dr\spc6
+data_win\missions\drdemo
+data_win\missions\drdemo\profiledata
+data_win\missions\drdemo\smoketest
+data_win\missions\fte
+data_win\missions\fte\fte01_pumpingst
+data_win\missions\fte\fte02_litehouse
+data_win\missions\fte\fte03_madlenka
+data_win\missions\fte\fte06_village
+data_win\missions\fte\fte07_camping
+data_win\missions\fte\fte12_debris
+data_win\missions\fte\profiledata
+data_win\missions\Mission Editor
+data_win\missions\multiplayer
+data_win\missions\multiplayer\ann_bridge_02
+data_win\missions\multiplayer\ann_mol_01
+data_win\missions\multiplayer\ifl_airfld_01
+data_win\missions\multiplayer\ifl_mad_02
+data_win\missions\multiplayer\profiledata
+data_win\missions\profiledata
+data_win\system
+data_win\system\ambx
+data_win\templates
+data_win\terrains
+data_win\terrains\heightmaps
+data_win\terrains\island
+data_win\terrains\island\bpaks
+data_win\terrains\island\tpaks
+data_win\terrains\water

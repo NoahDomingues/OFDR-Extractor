@@ -55,3 +55,5 @@ I will continue working on this tool to try to fix the issues, and if there is a
 
 #
 OFP Extractor is based on [QuickBMS](https://aluigi.altervista.org/quickbms.htm) by [Aluigi](https://twitter.com/luigi_auriemma). Thank you to TemplarGFX, tvig0r0us, and [Jaum](https://github.com/joaopb0) for helping out with this project!
+
+[![Discord](https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/Z88NnTgpWU)

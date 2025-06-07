@@ -3,7 +3,7 @@ A simple extraction tool for unpacking **Operation Flashpoint**'s game files. �
 
 [<img src="https://github.com/user-attachments/assets/63ee6f6f-5b81-4b77-b522-a6a9b7046639">](https://discord.gg/Z88NnTgpWU)
 
-## OFP Game Extractor v1.1
+## 🐉 OFP Game Extractor v1.1
 
 OFP Extractor is a simple tool to unpack the game files of **[Operation Flashpoint: Dragon Rising](https://en.wikipedia.org/wiki/Operation_Flashpoint:_Dragon_Rising)** and **[Operation Flashpoint: Red River](https://en.wikipedia.org/wiki/Operation_Flashpoint:_Red_River)**, both realistic, tactical mil-sim shooter games released by [Codemasters](https://www.codemasters.com) in 2009 and 2011 respectively. This tool is designed to decompress, decrypt, and extract files from the `win_000` archives in the game installation folder (inside these archives is where most of the game's content is stored).
 
@@ -15,7 +15,7 @@ Also, the tool does not maintain the directory structure of extracted files high
 
 Once you have modified the extracted files, **you must put them inside the correct directory in the `/data_win` folder for the game to read them**. The extraction tool will ask you at the end of the extraction process if you would like it to create these folders to help you.
 
-## OFDR/OFRR Modding
+🛠️ ## OFDR/OFRR Modding
 
 The extraction tool can extract the following file types from the game, which you can modify to make changes to the game. Some files will require special software programs to open/modify, some of which I have also listed.
 
@@ -37,7 +37,7 @@ The extraction tool can extract the following file types from the game, which yo
 
 **Any of these files can be opened using a [Hex Editor](https://mh-nexus.de/en/hxd/) to view the file's basic binary data, however.**
 
-## Download
+## 📥 Download
 
 Only the code used by the extractor is available on GitHub. To download the tool itself, you must join the **[Discord server](https://discord.gg/Z88NnTgpWU)**, navigate to the **#🛠game-unpacker-tool** channel, and download the `.exe` application that you can run.
 

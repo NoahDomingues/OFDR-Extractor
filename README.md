@@ -1,11 +1,7 @@
 # Operation Flashpoint Game Extractor
 A simple extraction tool for unpacking **Operation Flashpoint**'s game files. 🐉
 
-
-
 [<img src="https://github.com/user-attachments/assets/63ee6f6f-5b81-4b77-b522-a6a9b7046639">](https://discord.gg/Z88NnTgpWU)
-
-
 
 ## OFP Game Extractor v1.1
 

@@ -15,7 +15,7 @@ Also, the tool does not maintain the directory structure of extracted files high
 
 Once you have modified the extracted files, **you must put them inside the correct directory in the `/data_win` folder for the game to read them**. The extraction tool will ask you at the end of the extraction process if you would like it to create these folders to help you.
 
-🛠️ ## OFDR/OFRR Modding
+## 🛠️ OFDR/OFRR Modding
 
 The extraction tool can extract the following file types from the game, which you can modify to make changes to the game. Some files will require special software programs to open/modify, some of which I have also listed.
 

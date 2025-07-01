@@ -47,6 +47,13 @@ If you have any issues using the tool, let me know in the Discord server's **#�
 
 I will continue working on this tool to try to fix the issues, and if there is any way you can contribute or help fix what's wrong with the tool that would be amazing. But in the meantime... enjoy! =)
 
+## 👥 Contributors
+
+[![Contributors][contributors-image]][contributors-link]
+
+[contributors-image]: https://contrib.rocks/image?repo=NoahDomingues/OFP-Extractor
+[contributors-link]: https://github.com/NoahDomingues/OFP-Extractor/graphs/contributors
+
 **⭐ If this tool was of any use to you, please consider giving it a Star - it would make my day! ⭐**
 
 #
